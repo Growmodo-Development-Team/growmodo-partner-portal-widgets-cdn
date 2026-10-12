@@ -1,8 +1,8 @@
 # Growmodo Partner Portal Widgets — public bundles
 
-Release: **v0.1.2**
+Release: **v0.1.3**
 
-- [project-intake-form.js](https://cdn.jsdelivr.net/gh/Growmodo-Development-Team/growmodo-partner-portal-widgets-cdn@v0.1.2/dist/project-intake-form.js)
+- [project-intake-form.js](https://cdn.jsdelivr.net/gh/Growmodo-Development-Team/growmodo-partner-portal-widgets-cdn@v0.1.3/dist/project-intake-form.js)
 
 This repository contains generated browser bundles and their integrity manifest only. Development source, tests, and release automation are maintained in Growmodo's private source repository.
 
