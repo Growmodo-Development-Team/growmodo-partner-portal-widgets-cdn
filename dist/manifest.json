@@ -1,11 +1,11 @@
 {
-  "version": "0.1.3",
+  "version": "0.1.5",
   "widgets": {
     "project-intake-form": {
       "file": "project-intake-form.js",
-      "bytes": 342940,
-      "gzipBytes": 108841,
-      "integrity": "sha384-juTjHg5P7kY+6WjNccjk74fc3/bukWbdKepDkArJMI0ysForcpukWdDkwKiC+XXZ"
+      "bytes": 344458,
+      "gzipBytes": 108990,
+      "integrity": "sha384-y009ZHCtGYWfXz0+kb142YBeaqkjK2i+Ml7jef0FERchvVURMZ3/l2CYOq41Wyi1"
     }
   }
 }
