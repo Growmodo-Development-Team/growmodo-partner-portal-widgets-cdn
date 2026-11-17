@@ -1,11 +1,23 @@
 {
-  "version": "0.1.7",
+  "version": "0.2.0",
   "widgets": {
     "project-intake-form": {
       "file": "project-intake-form.js",
-      "bytes": 934638,
-      "gzipBytes": 302958,
-      "integrity": "sha384-StbMlfS1zHqv0JFcvZeIT6IyTJeDmWxHhs1yDxBaeF0iMwwnEoXOGNnnB+BGCtwa"
+      "bytes": 935528,
+      "gzipBytes": 303297,
+      "integrity": "sha384-EvChezZMIDfRWhj3MIpgBuffGXhoZDl4ev8DjdzALtSUBmXRPwfMvjkFbbdGQBAk"
+    },
+    "whats-new-page": {
+      "file": "whats-new-page.js",
+      "bytes": 338156,
+      "gzipBytes": 106102,
+      "integrity": "sha384-Q3EtXKKApDAbDHIhs6BfSNfDOwvpQrU+JwczwxpWB9CZeVPG/OpDS+9NWDErX8c7"
+    },
+    "whats-new-popup": {
+      "file": "whats-new-popup.js",
+      "bytes": 190940,
+      "gzipBytes": 60507,
+      "integrity": "sha384-q8tZTLzWqom9MJc3QyhNXpSINbcRwNX7b635e2KNrcZ4EGplnt1vkGDBD3ww3czm"
     }
   }
 }
