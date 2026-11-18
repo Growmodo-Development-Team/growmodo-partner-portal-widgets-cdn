@@ -653,6 +653,9 @@ ${r}
     --tw-translate-y: -50%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
   .animate-pulse {
     animation: var(--animate-pulse);
   }
@@ -1450,6 +1453,11 @@ dialog:has(.gm-brief-layout) {
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
       --tw-space-y-reverse: 0;
       --tw-border-style: solid;
       --tw-font-weight: initial;
@@ -1472,7 +1480,7 @@ dialog:has(.gm-brief-layout) {
     }
   }
 }
-`,label:"Create a project",onCloseRequest:()=>S.close()}),{host:e,dialog:t,mount:n}=o}function g(){let k=c();r&&k!==i&&(r.unmount(),r=null),!r&&(i=k,l={},r=(0,dR.createRoot)(n),(0,fR.flushSync)(()=>r.render((0,Tc.jsxs)(Pu.Provider,{value:t,children:[(0,Tc.jsx)(fE,{}),(0,Tc.jsx)(NC,{onClose:f,onDone:p,control:l})]}))))}let x=k=>{console.error("Growmodo project intake could not open:",k),window.dispatchEvent(new CustomEvent("gm-widget-error",{detail:{widget:"projectIntakeForm",message:k.message}}))},m=sR(document,()=>{S.open().catch(x)}),y=()=>{S.open().catch(x)},b=!1;function C(){b||(window.addEventListener(cR,y),b=!0)}let S={version:"0.2.0",register(k,v="click"){return m.register(k,v),C(),S},unregister(k,v="click"){return m.unregister(k,v),S},configure(k={}){if(k.projectsPath!==void 0){if(typeof k.projectsPath!="string"||!/^\/(?!\/)[^?#\\]*$/.test(k.projectsPath))throw new TypeError("projectsPath must be an absolute same-origin path without a query or hash.");u={...u,projectsPath:k.projectsPath}}return S},open(){if(C(),t?.open)return Promise.resolve(S);if(a)return a;let k=s;return a=d().then(()=>(k!==s||(e?.isConnected||(r?.unmount(),r=null,o?.destroy(),h()),g(),o.show(),window.dispatchEvent(new CustomEvent("gm-project-intake-opened"))),S)).finally(()=>{a=null}),a},close(){return l.close?l.close():f()},destroy(){return l.busy?.()?!1:(s+=1,f(),m.destroy(),window.removeEventListener(cR,y),b=!1,r?.unmount(),r=null,o?.destroy(),o=null,e=null,l={},!0)},get isOpen(){return!!t?.open},get registrations(){return m.registrations}};window[uR]=S,window.widgets.projectIntakeForm=S,C(),window.dispatchEvent(new CustomEvent("gm-widget-ready",{detail:{name:"projectIntakeForm",version:S.version}}))}cV();})();
+`,label:"Create a project",onCloseRequest:()=>S.close()}),{host:e,dialog:t,mount:n}=o}function g(){let k=c();r&&k!==i&&(r.unmount(),r=null),!r&&(i=k,l={},r=(0,dR.createRoot)(n),(0,fR.flushSync)(()=>r.render((0,Tc.jsxs)(Pu.Provider,{value:t,children:[(0,Tc.jsx)(fE,{}),(0,Tc.jsx)(NC,{onClose:f,onDone:p,control:l})]}))))}let x=k=>{console.error("Growmodo project intake could not open:",k),window.dispatchEvent(new CustomEvent("gm-widget-error",{detail:{widget:"projectIntakeForm",message:k.message}}))},m=sR(document,()=>{S.open().catch(x)}),y=()=>{S.open().catch(x)},b=!1;function C(){b||(window.addEventListener(cR,y),b=!0)}let S={version:"0.2.1",register(k,v="click"){return m.register(k,v),C(),S},unregister(k,v="click"){return m.unregister(k,v),S},configure(k={}){if(k.projectsPath!==void 0){if(typeof k.projectsPath!="string"||!/^\/(?!\/)[^?#\\]*$/.test(k.projectsPath))throw new TypeError("projectsPath must be an absolute same-origin path without a query or hash.");u={...u,projectsPath:k.projectsPath}}return S},open(){if(C(),t?.open)return Promise.resolve(S);if(a)return a;let k=s;return a=d().then(()=>(k!==s||(e?.isConnected||(r?.unmount(),r=null,o?.destroy(),h()),g(),o.show(),window.dispatchEvent(new CustomEvent("gm-project-intake-opened"))),S)).finally(()=>{a=null}),a},close(){return l.close?l.close():f()},destroy(){return l.busy?.()?!1:(s+=1,f(),m.destroy(),window.removeEventListener(cR,y),b=!1,r?.unmount(),r=null,o?.destroy(),o=null,e=null,l={},!0)},get isOpen(){return!!t?.open},get registrations(){return m.registrations}};window[uR]=S,window.widgets.projectIntakeForm=S,C(),window.dispatchEvent(new CustomEvent("gm-widget-ready",{detail:{name:"projectIntakeForm",version:S.version}}))}cV();})();
 /*! Bundled license information:
 
 react/cjs/react.production.min.js:
